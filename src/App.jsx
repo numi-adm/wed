@@ -93,20 +93,20 @@ export default function App() {
                 onClick={() => toggleMode('multiply')}
                 className={`flex-1 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${mode === 'multiply' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
               >
-                หาผลลัพธ์ (Find Result)
+                หาราคา (Find Result)
               </button>
               <button
                 onClick={() => toggleMode('divide')}
                 className={`flex-1 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${mode === 'divide' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
               >
-                หาจำนวนตั้งต้น (Find Base)
+                หาจำนวนต้น (Find Base)
               </button>
             </div>
 
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-1">
-                  {mode === 'multiply' ? 'จำนวนตั้งต้น (Base Amount)' : 'ผลลัพธ์ที่ต้องการ (Target Result)'}
+                  {mode === 'multiply' ? 'จำนวนต้น (Base Amount)' : 'ราคาที่ต้องการ (Target Result)'}
                 </label>
                 <input
                   type="number"
@@ -133,7 +133,7 @@ export default function App() {
               {/* แสดงผลลัพธ์ (Result Display) */}
               <div className="bg-blue-50 p-4 rounded-xl border border-blue-100 mt-4">
                 <div className="text-sm text-blue-600 font-medium mb-1">
-                  {mode === 'multiply' ? 'ผลลัพธ์ (Result)' : 'จำนวนตั้งต้นที่ต้องใช้ (Required Base Amount)'}
+                  {mode === 'multiply' ? 'ราคา (Result)' : 'จำนวนต้นที่ต้องใช้ (Required Base Amount)'}
                 </div>
                 <div className="text-3xl font-bold text-blue-900 break-words">
                   {mode === 'multiply'
